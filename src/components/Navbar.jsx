@@ -29,6 +29,8 @@ const Navbar = () => {
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  
+  
 
   const dropdownContent = () => {
     return (
@@ -38,7 +40,7 @@ const Navbar = () => {
             key={index}
             className='px-4 py-2 text-base font-normal primary'
           >
-            {item.hoverText}
+            <Link href={`${item.url}`}> {item.hoverText} </Link>
           </h1>
         ))}
       </div>
@@ -55,7 +57,7 @@ const Navbar = () => {
             className='text-base font-normal primary my-3'
             onClick={item.hoverText === 'NFT Series' ? handleToggleDropdown : undefined}
           >
-            {item.hoverText}
+            <Link href={`${item.url}`}> {item.hoverText} </Link>
           </p>
         ))}
         </div>
@@ -72,20 +74,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className='fixed w-full h-[90px]'>
+    <div className='relative z-2 w-full h-[90px]'>
       <div className='max-w-[1240px] m-auto p-4' onMouseLeave={handleDropdownToggle}>
         <div className='flex justify-between items-center py-2'>
           <div className='flex-start'>
-            <h1 className='text-xl sm:text-2xl font-bold cursor-pointer'>JOOCBOX</h1>
+            <Link href="/" ><h1 className='text-xl sm:text-2xl font-bold cursor-pointer'>JOOCBOX</h1></Link>
           </div>
           <div className='relative sm:flex hidden' onMouseEnter={handleMouseEnter}>
             <h1
               className='p-2 text-base font-normal text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access' },
-                  { text: 'Join Whitelist', hoverText: 'Join Whitelist' },
-                  { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint' },
+                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
+                  { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
+                  { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
                 ])
               }
             >
@@ -95,9 +97,9 @@ const Navbar = () => {
               className='p-2 text-base font-normal text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' },
-                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)' },
-                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' },
+                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'Majestic'},
+                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)',url:'Premium'},
+                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' ,url:'Common'},
                 ])
               }
             >
@@ -107,7 +109,7 @@ const Navbar = () => {
               className='p-2 text-base font-normal text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Vendor Machines', hoverText: 'Vendor Machines' },
+                  { text: 'Vendor Machines', hoverText: 'Vendor Machines'  },
                   { text: 'Colloboration', hoverText: 'Colloboration' },
                   { text: 'Partnerships', hoverText: 'Partnerships' },
                   { text: 'Team', hoverText: 'Team' },
@@ -170,7 +172,7 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? 'fixed sm:hidden w-screen h-14 top-[90px] bg-[#fff] p-2 ease-in duration-350'
+            ? ' sm:hidden w-screen h-14 top-[90px] bg-[#fff] p-2 ease-in duration-350'
             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
         }
       >
@@ -180,10 +182,10 @@ const Navbar = () => {
               className='primary text-base font-normal cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                    { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access' },
-                    { text: 'Join Whitelist', hoverText: 'Join Whitelist' },
-                    { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint' },
-                  ]) 
+                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
+                  { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
+                  { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
+                ])
               }
               onClick={toggleDivVisibility}
               
@@ -221,9 +223,9 @@ const Navbar = () => {
             </h1>
         </div>
       </div>
-      <div className='w-screen h-screen sm:hidden md:hidden mt-8'>
+      <div className=' w-screen max-h-screen lg:bg-transparent bg-white sm:bg-white sm:hidden md:hidden'>
       {isDivVisibility && (
-            <div className='w-screen h-screen border border-gray-200'>
+            <div className=' w-screen h-screen border border-gray-200'>
              <div className='grid grid-rows-2'>
                <div className='p-4 my-6 text-base primary w-screen'>  
                {mobileScreenContent()}
