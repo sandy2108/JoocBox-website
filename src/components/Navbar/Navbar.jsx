@@ -131,7 +131,7 @@ const Navbar = () => {
 
             
             {isDropdownOpen && (
-              <div className='fixed top-[90px] left-0 w-screen  h-[30vh] bg-[#fff]'>
+              <div className='fixed top-[90px] left-0 w-full  h-[30vh] bg-[#fff]'>
                 <div className='grid grid-cols-2 max-w-[1240px]'>
                   {dropdownContent()}
                   <div className='text-base'>
