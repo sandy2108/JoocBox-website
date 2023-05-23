@@ -102,7 +102,7 @@ const Navbar = () => {
     <div ref={navbarRef}  className= {`fixed top-0 left-0 w-full bg-white  z-50 transition duration-300 ${
       isVisible ? '' : 'transform -translate-y-full'
     }`}>
-      <div className='max-w-[1240px] m-auto p-4' onMouseLeave={handleDropdownToggle}>
+      <div className='max-w-[1240px] m-auto px-4 py-[10px]' onMouseLeave={handleDropdownToggle}>
         <div className='flex justify-between items-center py-2'>
           <div className='flex-start'>
             <Link href="/" >
