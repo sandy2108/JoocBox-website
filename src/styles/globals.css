@@ -42,9 +42,11 @@ background: linear-gradient(62deg, rgba(10,10,11,1) 19%, rgba(254,254,255,1) 37%
 } 
 
 @font-face {
-  font-family: 'Inter', sans-serif;
-  src: url('../assests/Fonts/Inter-Light.ttf');
+  font-family: 'Intermedium';
   src: url('../assests/Fonts/Inter-Medium.ttf');
-  font-weight: 500;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterLight';
+  src: url('../assests/Fonts/Inter-Light.ttf');
 }

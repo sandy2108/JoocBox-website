@@ -8,11 +8,17 @@ import Link from 'next/link';
 import logo from '../../assests/Images/logo.png';
 import Image from 'next/image';
 
+
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [dropdownItems, setDropdownItems] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDivVisibility,setDivVisibility]= useState(false);
+
+
+
+  
+
 
   const toggleDivVisibility =()=>{
     setDivVisibility(!isDivVisibility);
@@ -76,7 +82,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='relative z-2 w-screen h-[90px]'>
+    <div  className='relative z-2 w-screen h-[90px]'>
       <div className='max-w-[1240px] m-auto p-4' onMouseLeave={handleDropdownToggle}>
         <div className='flex justify-between items-center py-2'>
           <div className='flex-start'>
