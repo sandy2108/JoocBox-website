@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer'
 import Hero from '@/components/Homepage/Hero'
 import Intro from '@/components/Homepage/Intro'
 import Cards from '@/components/Homepage/Cards'
+import About from '@/components/Homepage/About'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero/>
       <Intro/>
       <Cards/>
+      <About/>
       <Footer/>
    </>
     

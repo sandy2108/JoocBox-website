@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
 :root {
   background-color: #fff;
   font-family: 'Inter', sans-serif;
@@ -32,3 +35,11 @@
   background: rgb(10,10,11);
 background: linear-gradient(62deg, rgba(10,10,11,1) 19%, rgba(254,254,255,1) 37%, rgba(0,0,0,1) 64%, rgba(255,255,255,1) 100%);
 } 
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../assests/Fonts/Inter-Light.ttf');
+  src: url('../assests/Fonts/Inter-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}

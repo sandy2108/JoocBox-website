@@ -2,6 +2,7 @@ import React from 'react';
 import juice from '../../assests/Images/j.png';
 import panda from '../../assests/Images/panda.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import bg from '../../assests/Images/community.mp4';
 
@@ -55,7 +56,7 @@ const cards = () => {
           <div className='rounded-2xl m-8 overflow-hidden relative'>
            <video src={bg} autoPlay loop muted style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
            <div className='absolute bottom-0 left-0 p-4'>
-              <h1 className='text-3xl sm:text-3xl md:text-3xl lg:text-4xl px-10 hover:text-[#4ca3ff] my-2 text-white font-bold'>Meet the JoocBox Community</h1>
+              <Link href="https://discord.gg/n4HE6yyu" alt="/"> <h1 className='text-3xl sm:text-3xl md:text-3xl lg:text-4xl px-10 hover:text-[#4ca3ff] my-2 text-white font-bold'>Meet the JoocBox Community</h1></Link>
           </div>
           </div>
 
