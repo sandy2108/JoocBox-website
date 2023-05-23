@@ -4,7 +4,7 @@ import panda from '../../assests/Images/panda.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import bg from '../../assests/Images/community.mp4';
+import bg from '../../assests/Videos/community.mp4';
 
 
 const cards = () => {

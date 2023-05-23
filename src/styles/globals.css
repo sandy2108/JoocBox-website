@@ -8,7 +8,6 @@
 :root {
   background-color: #fff;
   font-family: 'Inter', sans-serif;
- 
 }
 .primary {
   color: #91a3b1;
@@ -29,6 +28,12 @@
   background-size: fill;
   background-position: center center;
   height: 100vh; 
+}
+
+.loop{
+  background-image: url('../assests/Images/loop.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .customtext{
