@@ -7,17 +7,33 @@ import { BiMenu } from 'react-icons/bi';
 import Link from 'next/link';
 import logo from '../../assests/Images/logo.png';
 import Image from 'next/image';
-
+import { useEffect,useRef } from 'react';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [dropdownItems, setDropdownItems] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDivVisibility,setDivVisibility]= useState(false);
+ 
+  //Onscroll Effects on Navbar 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+  const navbarRef = useRef(null);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        const isVisible = prevScrollPos > currentScrollPos;
+        setPrevScrollPos(currentScrollPos);
+        setIsVisible(isVisible);
+      };
 
-
-
-  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [prevScrollPos]);
 
 
   const toggleDivVisibility =()=>{
@@ -46,7 +62,7 @@ const Navbar = () => {
         {dropdownItems.map((item, index) => (
           <h1
             key={index}
-            className='px-4 py-2 text-base font-normal primary'
+            className='px-4 py-2 text-base font-medium font-Inter primary'
           >
             <Link href={`${item.url}`}> {item.hoverText} </Link>
           </h1>
@@ -82,7 +98,10 @@ const Navbar = () => {
   };
 
   return (
-    <div  className='relative z-2 w-screen h-[90px]'>
+    <div className='w-full h-[90px]'>
+    <div ref={navbarRef}  className= {`fixed top-0 left-0 w-full bg-white  z-50 transition duration-300 ${
+      isVisible ? '' : 'transform -translate-y-full'
+    }`}>
       <div className='max-w-[1240px] m-auto p-4' onMouseLeave={handleDropdownToggle}>
         <div className='flex justify-between items-center py-2'>
           <div className='flex-start'>
@@ -98,7 +117,7 @@ const Navbar = () => {
           </div>
           <div className='relative sm:flex hidden' onMouseEnter={handleMouseEnter}>
             <h1
-              className='p-2 text-base font-normal text-[#91a3b1] hover:text-blue-500 cursor-pointer'
+              className='p-2 text-base font-Inter font-medium text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
                   { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
@@ -110,7 +129,7 @@ const Navbar = () => {
               NFT Series
             </h1>
             <h1
-              className='p-2 text-base font-normal text-[#91a3b1] hover:text-blue-500 cursor-pointer'
+              className='p-2 text-base font-Inter font-medium text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
                   { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'Majestic'},
@@ -122,7 +141,7 @@ const Navbar = () => {
               JoocBox TierList
             </h1>
             <h1
-              className='p-2 text-base font-normal text-[#91a3b1] hover:text-blue-500 cursor-pointer'
+              className='p-2 text-base font-Inter font-medium text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
                   { text: 'Vendor Machines', hoverText: 'Vendor Machines'  },
@@ -142,7 +161,7 @@ const Navbar = () => {
                   {dropdownContent()}
                   <div className='text-base'>
                     <div className='py-6'>
-                      <p className='text-lg sm:text-xl text-black font-normal'>
+                      <p className='text-[18px] font-Inter font-medium sm:text-xl text-black '>
                         Lets connect with us! Get news, updates, and insights.
                       </p>
                     </div>
@@ -195,7 +214,7 @@ const Navbar = () => {
         <div className=' max-w-[1240px] flex  gap-5 m-auto my-2'>
              
             <h1
-              className='primary text-base font-normal cursor-pointer'
+              className='primary text-base font-medium cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
                   { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
@@ -282,6 +301,7 @@ const Navbar = () => {
            </div>
             )}
       </div>
+    </div>
     </div>
   );
 };
