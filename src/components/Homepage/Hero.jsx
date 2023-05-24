@@ -11,9 +11,9 @@ const Hero = () => {
                 <h1 className=' font-inter font-normal text-transparent sm:text-9xl  m-5 text-7xl leading-none text-gradient bg-gradient-to-r from-gray-900 to-white bg-clip-text' >Build Beyond </h1>
             </div>
             <div className='mx-auto items-start justify-start'>
-                <h2 className=' font-normal p-4 w-1/2 md:w-1/2 lg:whitespace-nowrap lg:w-1/2 text-white justify-start leading-none text-4xl m-5'>Squeeze the Wealth Out of Fashion!</h2>
+                <h2 className=' font-normal p-4  md:w-1/2 lg:whitespace-nowrap lg:w-1/2 text-white justify-start leading-none text-4xl m-5'>Squeeze the Wealth Out of Fashion!</h2>
             </div>
-            <div className='mx-auto my-44 mt-12 '>
+            <div className='mx-auto my-44 mt-12 '> 
                 <p className='font-inter font-bold m-5 text-inter-500 text-md leading-6 text-gray-700 my-10 p-4 flex'><BsArrowDown size={24} className='mr-2'/>Explore more </p>
             </div>
           </div>

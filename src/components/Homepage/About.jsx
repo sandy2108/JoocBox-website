@@ -9,7 +9,7 @@ const About = () => {
    
 
   const [textIndex, setTextIndex] = useState(0);
-  const phrases = ['Possibilities', 'Chances', 'Scalability'];
+  const phrases = ['Trust', 'Chances', 'Scalable'];
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -24,7 +24,7 @@ const Security = () => {
 
 
   return (
-    <div className='w-full lg:h-screen my-20 security'>
+    <div className='w-full lg:h-full my-20 security'>
         <div className='m-4'>
           <div className='max-w-[1500px] rounded-3xl flex-wrap overflow-hidden border-2 border-[#e7e7e7] md:h-[700px] m-auto'>
              
