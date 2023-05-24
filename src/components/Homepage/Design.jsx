@@ -6,7 +6,7 @@ const Design = () => {
   return (
     <div className='w-full'>
         <div className='m-4'>
-          <div className='max-w-[1400px] rounded-3xl flex-wrap overflow-hidden bg-[#011829] h-[440px] md:h-[780px] m-auto'>
+          <div className='max-w-[1500px] rounded-3xl flex-wrap overflow-hidden bg-[#011829] h-[440px] md:h-[780px] m-auto'>
              <div className='w-full h-[40%] md:h-[55%] rounded-b-2xl loop overflow-hidden bg-gray-100'>
               
              </div>
