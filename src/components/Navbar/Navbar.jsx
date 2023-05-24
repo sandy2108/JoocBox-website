@@ -117,7 +117,7 @@ const Navbar = () => {
           </div>
           <div className='relative sm:flex hidden' onMouseEnter={handleMouseEnter}>
             <h1
-              className='p-2 text-base font-Inter font-medium text-[#91a3b1] hover:text-blue-500 cursor-pointer'
+              className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
                   { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
@@ -129,7 +129,7 @@ const Navbar = () => {
               NFT Series
             </h1>
             <h1
-              className='p-2 text-base font-Inter font-medium text-[#91a3b1] hover:text-blue-500 cursor-pointer'
+              className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
                   { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'Majestic'},
@@ -138,14 +138,13 @@ const Navbar = () => {
                 ])
               }
             >
-              JoocBox TierList
+              JooC Drops
             </h1>
             <h1
-              className='p-2 text-base font-Inter font-medium text-[#91a3b1] hover:text-blue-500 cursor-pointer'
+              className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Vendor Machines', hoverText: 'Vendor Machines'  },
-                  { text: 'Colloboration', hoverText: 'Colloboration' },
+                  { text: 'Collaboration', hoverText: 'Colloboration' },
                   { text: 'Partnerships', hoverText: 'Partnerships' },
                   { text: 'Team', hoverText: 'Team' },
                 ])
@@ -193,8 +192,8 @@ const Navbar = () => {
             )}
           </div>
           <div className='mx-20px flex'>
-            <button className='mx-20px rounded-full bg-[#3898ec] mx-2 px-4 hover:bg-[#4da2ff] p-2 text-white'>
-              Whitepaper
+            <button className='mx-[20px] w-35 rounded-full bg-[#3898ec] px-4 py-2 hover:bg-[#4da2ff] p-2 text-white'>
+              <p className='p-1 w-30'>Whitepaper</p>
             </button>
             <div className='sm:hidden cursor-pointer' onClick={handleMenu}>
               <div className='flex  items-center justify-center'>
@@ -239,7 +238,7 @@ const Navbar = () => {
               }
               onClick={toggleDivVisibility}
             >
-              TierList
+              Joo'C Drops
             </h1>
 
             <h1
