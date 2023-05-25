@@ -216,7 +216,7 @@ const Navbar = () => {
               className='primary text-base font-medium cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
+                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft' },
                   { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
                   { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
                 ])
@@ -231,9 +231,9 @@ const Navbar = () => {
               className='primary text-base font-normal cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                    { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' },
-                    { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)' },
-                    { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' },
+                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'/drops/Majestic'},
+                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)',url:'/drops/Premium'},
+                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' ,url:'/drops/Common'},
                   ])
               }
               onClick={toggleDivVisibility}
@@ -245,10 +245,9 @@ const Navbar = () => {
               className='primary text-base font-normal cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Vendor Machines', hoverText: 'Vendor Machines' },
-                  { text: 'Colloboration', hoverText: 'Colloboration' },
-                  { text: 'Partnerships', hoverText: 'Partnerships' },
-                  { text: 'Team', hoverText: 'Team' },
+                  { text: 'Collaboration', hoverText: 'Colloboration' ,url:"/connect/Colloboration"},
+                  { text: 'Partnerships', hoverText: 'Partnerships', url:"/connect/Partnerships" },
+                  { text: 'Team', hoverText: 'Team',url:"/connect/Team"},
                 ])
               }
               onClick={toggleDivVisibility}
