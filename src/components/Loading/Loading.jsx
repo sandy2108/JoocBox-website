@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const CustomLoadingIcon = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen bg-white">
       <div className=" mb-4">
-        <Image src={loading} height="50" width='45' alt="/" layout="responsive" />
+        <Image src={loading} height="50" width='45' alt="/" layout="responsive" className='bg-transparent'/>
       </div>
       <p className="text-2xl text-black">Loading...</p>
     </div>
