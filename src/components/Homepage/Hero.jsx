@@ -4,7 +4,7 @@ import {BsArrowDown} from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className='w-full h-full my-10'>
+    <div className='w-full h-full my-5'>
         <div className='m-4'>
           <div className='max-w-[1500px] rounded-3xl flex-wrap background h-[680px] m-auto p-4'>
             <div className='mx-auto md:my-12'>
