@@ -120,7 +120,7 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'nft' },
+                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft' },
                   { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
                   { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
                 ])
@@ -132,9 +132,9 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'Majestic'},
-                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)',url:'Premium'},
-                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' ,url:'Common'},
+                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'/drops/Majestic'},
+                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)',url:'/drops/Premium'},
+                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' ,url:'/drops/Common'},
                 ])
               }
             >
@@ -144,9 +144,9 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Collaboration', hoverText: 'Colloboration' },
-                  { text: 'Partnerships', hoverText: 'Partnerships' },
-                  { text: 'Team', hoverText: 'Team' },
+                  { text: 'Collaboration', hoverText: 'Colloboration' ,url:"/connect/Colloboration"},
+                  { text: 'Partnerships', hoverText: 'Partnerships', url:"/connect/Partnerships" },
+                  { text: 'Team', hoverText: 'Team',url:"/connect/Team"},
                 ])
               }
             >
@@ -238,7 +238,7 @@ const Navbar = () => {
               }
               onClick={toggleDivVisibility}
             >
-              Joo'C Drops
+              JooC Drops
             </h1>
 
             <h1
