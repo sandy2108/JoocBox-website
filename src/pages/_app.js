@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     // Simulate a 2-second delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
