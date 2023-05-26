@@ -8,6 +8,7 @@ import Link from 'next/link';
 import logo from '../../assests/Images/logo.png';
 import Image from 'next/image';
 import { useEffect,useRef } from 'react';
+ import { BsLayers } from "react-icons/bs";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -59,6 +60,7 @@ const Navbar = () => {
   const dropdownContent = () => {
     return (
       <div className='max-w-[1240px] mx-auto p-4 border-r-4'>
+        <p className='px-2 text-lg flex primary1'> <BsLayers className='mx-2 mt-1'/> Use cases</p>
         {dropdownItems.map((item, index) => (
           <h1
             key={index}
@@ -75,11 +77,12 @@ const Navbar = () => {
     return (
       <div className='w-full'>
         <div className='my-5'>
+        <p className=' text-xl flex primary1'> <BsLayers className='mx-2 mt-1'/> Use cases</p>
         {dropdownItems.map((item, index) => (
           <p
             key={index}
-            className='text-base font-normal primary my-3'
-            onClick={item.hoverText === 'NFT Series' ? handleToggleDropdown : undefined}
+            className='text-base font-normal primary my-3 mx-2'
+            onClick={handleMenu}
           >
             <Link href={`${item.url}`}> {item.hoverText} </Link>
           </p>
@@ -132,9 +135,9 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'/drops/Majestic'},
-                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)',url:'/drops/Premium'},
-                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' ,url:'/drops/Common'},
+                  { text: 'Fashion Fusion', hoverText: 'Fashion Fusion' , url:'/drops/Fashion'},
+                  { text: 'NFTs', hoverText: 'NFTs',url:'/drops/Nft'},
+                  { text: 'JooC Stake', hoverText: 'JooC Stake' ,url:'/drops/Jooc_stake'},
                 ])
               }
             >
@@ -231,9 +234,9 @@ const Navbar = () => {
               className='primary text-base font-normal cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'The Majestic Mixture (Ultra-Rare)', hoverText: 'The Majestic Mixture (Ultra-Rare)' , url:'/drops/Majestic'},
-                  { text: 'The Premium Pour (Rare)', hoverText: 'The Premium Pour (Rare)',url:'/drops/Premium'},
-                  { text: 'The Simple Squeeze (Common)', hoverText: 'The Simple Squeeze (Common)' ,url:'/drops/Common'},
+                  { text: 'Fashion Fusion', hoverText: 'Fashion Fusion' , url:'/drops/Fashion'},
+                  { text: 'NFTs', hoverText: 'NFTs',url:'/drops/Nft'},
+                  { text: 'JooC Stake', hoverText: 'JooC Stake' ,url:'/drops/Jooc_stake'},
                   ])
               }
               onClick={toggleDivVisibility}

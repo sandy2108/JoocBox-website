@@ -12,7 +12,7 @@ const cards = () => {
     <div className='w-full text-white'>
       <div className='max-w-[1240px] mx-auto py-12'>
         <div className='grid lg:grid-cols-2 '>
-          <div className='grid md:grid-rows-2 gap-2'>
+          <div className='grid md:grid-rows-2 gap-8'>
 
              <div className='bg-[#011829] rounded-xl shadow-2xl mx-5 px-8 pt-8 mt-8'>
                 <div className='grid lg:grid-cols-3  my-5 mt-0'>
@@ -33,7 +33,7 @@ const cards = () => {
              </div>
 
              <div className='bg-white rounded-xl shadow-2xl mx-5 px-8 mb-8 text-black'>
-                <div className='grid lg:grid-cols-3 my-5 mt-0'>
+                <div className='grid lg:grid-cols-3 mt-0'>
                     <div className='col-span-1 py-4 lg:py-2 flex justify-center items-start'>
                     <Image
                             src={panda}
@@ -44,7 +44,7 @@ const cards = () => {
                           />
                     </div>
                     <div className='col-span-2'>
-                        <p className='font-inter my-2 font-normal text-base sm:text-lg leading-normal'>JooC Box enhances customer engagement with an immersive AR/VR juice bar, a chatbot or AI assistant, and design contests that foster brand involvement and ownership.</p>
+                        <p className='font-inter my-2 font-normal text-base sm:text-lg leading-2'>JooC Box enhances customer engagement with an immersive AR/VR juice bar, a chatbot or AI assistant, and design contests that foster brand involvement and ownership.</p>
                         <h1 className='font-inter font-normal text-[#4ca3ff] hover:text-black text-2xl leading-6 my-5'>Engage</h1>
                     </div>
                 </div>
