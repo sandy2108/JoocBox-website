@@ -147,8 +147,8 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Collaboration', hoverText: 'Colloboration' ,url:"/connect/Colloboration"},
-                  { text: 'Partnerships', hoverText: 'Partnerships', url:"/connect/Partnerships" },
+                  { text: 'Mission and Values', hoverText: 'Mission and Values' ,url:"/connect/Mission"},
+                  { text: 'Ambassadors', hoverText: 'Ambassadors', url:"/connect/Ambassador" },
                   { text: 'Team', hoverText: 'Team',url:"/connect/Team"},
                 ])
               }
@@ -248,8 +248,8 @@ const Navbar = () => {
               className='primary text-base font-normal cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Collaboration', hoverText: 'Colloboration' ,url:"/connect/Colloboration"},
-                  { text: 'Partnerships', hoverText: 'Partnerships', url:"/connect/Partnerships" },
+                  { text: 'Mission and Values', hoverText: 'Mission and Values' ,url:"/connect/Mission"},
+                  { text: 'Ambassadors', hoverText: 'Ambassadors', url:"/connect/Ambassador" },
                   { text: 'Team', hoverText: 'Team',url:"/connect/Team"},
                 ])
               }
