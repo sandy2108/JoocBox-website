@@ -43,7 +43,7 @@ const Types = () => {
                     <div className="md:px-20">
                         <div>
                             <h1 className="font-bold font-weight-600 text-4xl leading-[64px] text-[#011829]">Ambassador <span className="text-[#3898ec]">Roles</span> </h1>
-                            <p className="py-5 text-left text-[#011829] font-base font-weight-600 md:text-2xl text-xl leading-6 md:leading-8">The Joocbox Advocates Program empowers members of Joocbox's ecosystem to drive community development and growth by sharing contributions through different role types:</p>
+                            <p className="py-5 text-left text-[#011829] font-base font-weight-600 md:text-2xl text-xl leading-6 md:leading-8">The Joocbox Advocates Program empowers members of Joocbox ecosystem to drive community development and growth by sharing contributions through different role types:</p>
                         </div>
                         <div className="my-10 grid lg:grid-cols-3 grid-cols-2 ">
                             {roleData.map((role, index) => (
