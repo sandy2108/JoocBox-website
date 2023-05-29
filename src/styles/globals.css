@@ -80,3 +80,16 @@ background: linear-gradient(62deg, rgba(10,10,11,1) 19%, rgba(254,254,255,1) 37%
   color: #3490dc;
 }
 
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, 5px); }
+  100% { transform: translate(0, -0px); }
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
