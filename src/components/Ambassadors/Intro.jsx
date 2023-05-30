@@ -1,36 +1,32 @@
 import React from "react";
-import juice from '../../assests/Images/Ambassadors/juice.png';
+import amba from '../../assests/Images/Ambassadors/amba.jpg';
 import Image from "next/image";
 
 const Intro = () => {
   return (
     <div className="w-full h-full ">
       <div className="md:pt-10 pt-2">
-        <div className="max-w-[1240px]  h-[480px] rounded-3xl bg-[#eaf7ff] mx-auto md:px-40 md:pb-40 pt-14  p-4">
-          <div className=" items-center justify-center">
-            <div className="text-md flex md:items-center items-start justify-start md:justify-center">
-              <h1 className="font-medium text-lg  leading-6 mb-5">
-                Ambassador
-              </h1>
+        <div className="max-w-[1240px] h-[480px] rounded-3xl bg-[#eaf7ff] mx-auto lg:px-18 md:pb-40 pt-14  p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                 <div className="text-left my-10">
+                   <p className="font-semibold text-left md:text-6xl text-[30px] leading-none ">
+                     Become a JoocBox{" "}
+                     <span className="text-blue-400 ">Ambassador</span>
+                   </p>
+
+                   <p className="my-20">Help to Grow the Community</p>
+                 </div>  
             </div>
-            <div className="items-start justify-start ">
-              <p className="font-semibold md:text-6xl text-[30px] leading-none md:text-center ">
-                Become a JoocBox{" "}
-                <span className="text-blue-400 ">Ambassador</span>
-              </p>
-            </div>
-            <p className="md:py-10 py-5 my-3 md:text-center text-justify font-normal text-[#011829] text-lg leading-normal">
-              Join JooCBox Ambassadors, a community-driven initiative supporting
-              JooCBox mission.Learn about JooCBox, contribute to community
-              growth, and promote its adoption. Become an Ambassador and visit
-              the official channels or website to get involved.
-            </p>
-            <div className="items-center justify-center text-center">
-              <button className="bg-blue-500 rounded-lg p-2">
-                Apply to be an Ambassadors
-              </button>
+            <div>
+              <div className="mx-20">
+                <Image src={amba} width="380" height="280" alt="/" className=" rounded-xl mx-20" />
+              </div>
+              
             </div>
           </div>
+          
+
         </div>
       </div>
     </div>
