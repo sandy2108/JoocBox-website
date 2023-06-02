@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
-import image1 from "../../assests/Images/Nfts/booty.png";
-import image2 from "../../assests/Images/Nfts/jooc.png";
-import image3 from "../../assests/Images/Nfts/mim.png";
-import image4 from "../../assests/Images/Nfts/minty.png";
+
 import TimeDisplay from "@/components/NFTs/TimeDisplay";
 import { SiEthereum } from "react-icons/si";
 import FancyCarousel from "react-fancy-circular-carousel";
 import "react-fancy-circular-carousel/FancyCarousel.css";
 
-import image5 from '../../assests/Images/Ambassadors/e.png';
-import image6 from '../../assests/Images/Ambassadors/ed.png';
 
 const Early = () => {
   const [textIndex, setTextIndex] = useState(0);
