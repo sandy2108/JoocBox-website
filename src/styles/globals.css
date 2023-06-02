@@ -93,3 +93,40 @@ background: linear-gradient(62deg, rgba(10,10,11,1) 19%, rgba(254,254,255,1) 37%
   animation-timing-function: ease-in-out;
 }
 
+.textcolor{
+  background: #00EAFF;
+background: radial-gradient(ellipse farthest-corner at center center, #00EAFF 0%, #4D3589 41%, #BADAFF 52%, #0025CE 86%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.textcolor1{
+  background: #FFCF26;
+background: linear-gradient(to right, #FFCF26 10%, #3929F1 27%, #EB22CB 86%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.button1 {
+  color: black;
+  background-color: white;
+  font-weight: bolder;
+}
+
+.button1:hover {
+  color: #ffffff;
+  background-color: #0f0f0f;
+  font-weight: bold;
+}
+

@@ -123,7 +123,7 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft' },
+                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft/Early' },
                   { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
                   { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
                 ])
@@ -219,7 +219,7 @@ const Navbar = () => {
               className='primary text-base font-medium cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft' },
+                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft/Early' },
                   { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
                   { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
                 ])
