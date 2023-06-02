@@ -7,19 +7,16 @@ import TimeDisplay from "@/components/NFTs/TimeDisplay";
 import { SiEthereum } from "react-icons/si";
 import FancyCarousel from "react-fancy-circular-carousel";
 import "react-fancy-circular-carousel/FancyCarousel.css";
-import Image from "next/image";
+
+import image5 from '../../assests/Images/Ambassadors/e.png';
+import image6 from '../../assests/Images/Ambassadors/ed.png';
 
 const Early = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [showAnimation, setShowAnimation] = useState(false);
   const phrase = ["Boom Booty", "Juicy Squeeze", "Mimic mystery", "Minty Magic"];
 
-  const images = [
-    image1.default,
-    image2.default,
-    image3.default,
-    image4.default,
-  ];
+  const images = ["../../assests/Images/Nfts/booty.png", "../../assests/Images/Nfts/jooc.png", "../../assests/Images/Nfts/mim.png", "../../assests/Images/Nfts/minty.png", '../../assests/Images/Ambassadors/e.png','../../assests/Images/Ambassadors/ed.png'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -36,11 +33,11 @@ const Early = () => {
   }, [phrase.length]);
 
   return (
-    <div className="w-screen py-6 h-screen">
-      <div className="max-w-[1240px] mx-auto p-4 py-3">
-        <div className="md:flex md:px-20 px-4">
+    <div className="w-full h-screen">
+      <div className="max-w-[1240px] mx-auto p-4">
+        <div className="md:flex">
           <div className="items-center justify-center">
-            <div className="item-center justify-center text-center pb-5 md:w-[500px]">
+            <div className="item-center justify-center text-center pb-5 md:mx-10 md:my-10 md:w-[480px]">
               <h1 className="text-8xl textcolor1 flex left-0">NFT</h1>
               <div>
                 <p
@@ -84,23 +81,17 @@ const Early = () => {
               </div>
             </div>
           </div>
-
-          <div className="h-[400px] w-[300px] relative ml-auto">
-            <div className="absolute bottom-0 right-0">
-              <div
-                className="h-[50%] w-[100%] overflow-hidden"
-                style={{ transform: "translateY(50%)" }}
-              >
+          <div className="absolute bottom-0 right-0 h-screen w-screen overflow-hidden hidden lg:block">
+            <div className="h-screen w-screen flex items-end justify-end">
+              <div className="w-[450px] h-[480px]">
                 <FancyCarousel
                   images={images}
-                  carouselRadius={300}
-                  peripheralImageRadius={104}
-                  focusElementStyling={{margin:'2px'}}
-                  centralImageRadius={0}
                   autoRotateTime={3}
+                  centralImageRadius={0}
+                  carouselRadius={300}
                   borderWidth={0}
-                  borderHexColor={"1c364f"}
-                  transitionTime = {1.5}
+                  peripheralImageRadius={90}
+                  
                 />
               </div>
             </div>
