@@ -9,7 +9,7 @@ import FancyCarousel from "@/components/NFTs/FancyComponent";
 const Early = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [showAnimation, setShowAnimation] = useState(false);
-  const phrase = ["Boom Booty","Minty Magic", "Juicy Squeeze", "Mimic Mystery"];
+  const phrase = ["Minty Magic","Juicy Girl", "Pasta Guy", "Boxer Boy","Hot Babe","Mimic Mystery"];
 
   const images = [
     'https://dl.dropboxusercontent.com/s/e8f1ongrtm2dqry/chickenricedude.png',
@@ -44,15 +44,15 @@ const Early = () => {
               <h1 className="text-8xl textcolor1 flex left-0">NFT</h1>
               <div>
                 <p
-                  className={`text-[#FA6C00] flex left-0 font-bold my-5 text-3xl md:text-7xl ${
+                  className={`text-[#FA6C00] flex left-0 font-bold my-2 text-3xl md:text-7xl ${
                     showAnimation ? "fade-in" : ""
                   }`}
                 >
                   {phrase[textIndex]}
                 </p>
               </div>
-              <div className="my-5">
-                <p className="text-xl text-left font-medium">
+              <div className="my-5 md:my-8">
+                <p className="text-2xl leading-8 text-left font-medium">
                   JoocBox is a collection of 4 tier drops funny JoocBox unique
                   digital collectibles living on the Ethereum blockchain.
                 </p>
@@ -89,12 +89,13 @@ const Early = () => {
               <div className="w-[480px] h-[520px]">
                 <FancyCarousel
                   images={images}
-                  autoRotateTime={1}
+                  autoRotateTime={1.5}
                   centralImageRadius={0}
                   carouselRadius={350}
                   borderWidth={0}
                   peripheralImageRadius={110}
                   borderHexColor={'ff6600'}
+                  transitionTime={2}
                   
                 />
               </div>
