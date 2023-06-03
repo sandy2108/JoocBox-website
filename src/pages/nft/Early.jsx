@@ -9,7 +9,7 @@ import FancyCarousel from "@/components/NFTs/FancyComponent";
 const Early = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [showAnimation, setShowAnimation] = useState(false);
-  const phrase = ["Boom Booty", "Juicy Squeeze", "Mimic mystery", "Minty Magic"];
+  const phrase = ["Boom Booty","Minty Magic", "Juicy Squeeze", "Mimic Mystery"];
 
   const images = [
     'https://dl.dropboxusercontent.com/s/e8f1ongrtm2dqry/chickenricedude.png',
@@ -40,11 +40,11 @@ const Early = () => {
       <div className="max-w-[1240px] mx-auto p-4">
         <div className="md:flex">
           <div className="items-center justify-center">
-            <div className="item-center justify-center text-center pb-5 md:mx-10 md:my-10 md:w-[480px]">
+            <div className="item-center justify-center text-center pb-5 md:mx-10 md:my-8 md:w-[580px]">
               <h1 className="text-8xl textcolor1 flex left-0">NFT</h1>
               <div>
                 <p
-                  className={`text-[#FA6C00] flex left-0 font-bold my-5 text-3xl ${
+                  className={`text-[#FA6C00] flex left-0 font-bold my-5 text-3xl md:text-7xl ${
                     showAnimation ? "fade-in" : ""
                   }`}
                 >
@@ -86,14 +86,14 @@ const Early = () => {
           </div>
           <div className="absolute bottom-0 right-0 h-screen w-screen overflow-hidden hidden lg:block ">
             <div className="h-screen w-screen flex items-end justify-end">
-              <div className="w-[450px] h-[480px]">
+              <div className="w-[480px] h-[520px]">
                 <FancyCarousel
                   images={images}
                   autoRotateTime={1}
                   centralImageRadius={0}
-                  carouselRadius={320}
+                  carouselRadius={350}
                   borderWidth={0}
-                  peripheralImageRadius={90}
+                  peripheralImageRadius={110}
                   borderHexColor={'ff6600'}
                   
                 />
