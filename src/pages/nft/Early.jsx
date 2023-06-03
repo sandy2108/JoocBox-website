@@ -89,7 +89,7 @@ const Early = () => {
               <div className="w-[450px] h-[480px]">
                 <FancyCarousel
                   images={images}
-                  autoRotateTime={2}
+                  autoRotateTime={1}
                   centralImageRadius={0}
                   carouselRadius={320}
                   borderWidth={0}

@@ -139,11 +139,12 @@ const FancyCarousel = ({
                 transition: `${transitionTime}s`
               }}
             >
-              <img
+              <Image
                 className="fancy-carousel-image border-4 border-gray-800"
                 src={item}
                 alt={`Image ${index}`}
-               
+                width={400}
+                height={400}
                 style={{ width: `${peripheralImageRadius * 4}px`, height: `${peripheralImageRadius * 2}px` }}
               />
             </div>
@@ -162,11 +163,12 @@ const FancyCarousel = ({
               transition: `${transitionTime}s`
             }}
           >
-            <img
+            <Image
               className="fancy-carousel-central-image"
               src={images[carousel.focusElement]}
               alt="Central Image"
-              
+              width={400}
+              height={400}
               style={{ width: `${centralImageRadius * 2}px`, height: `${centralImageRadius * 2}px`, transition: `${transitionTime}s` }}
             />
           </div>
