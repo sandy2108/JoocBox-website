@@ -109,6 +109,13 @@ background: linear-gradient(to right, #FFCF26 10%, #3929F1 27%, #EB22CB 86%);
 
 }
 
+.textcolor2{
+  background: #FF3800;
+background: linear-gradient(90deg, #451307 0%, rgb(11, 13, 14) 46%, #0f0f0f 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-in;
@@ -176,4 +183,6 @@ background: linear-gradient(to right, #FFCF26 10%, #3929F1 27%, #EB22CB 86%);
 .invisible {
   display: none;
 }
+
+
 

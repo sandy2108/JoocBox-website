@@ -41,7 +41,7 @@ const Early = () => {
         <div className="md:flex">
           <div className="items-center justify-center">
             <div className="item-center justify-center text-center pb-5 md:mx-10 md:my-8 md:w-[580px]">
-              <h1 className="text-8xl textcolor1 flex left-0">NFT</h1>
+              <h1 className="text-8xl textcolor2 flex left-0">NFT</h1>
               <div>
                 <p
                   className={`text-[#FA6C00] flex left-0 font-bold my-2 text-3xl md:text-7xl ${
@@ -52,7 +52,7 @@ const Early = () => {
                 </p>
               </div>
               <div className="my-5 md:my-8">
-                <p className="text-2xl leading-8 text-left font-medium">
+                <p className="text-2xl text-[#34526e] leading-8 text-left font-medium">
                   JoocBox is a collection of 4 tier drops funny JoocBox unique
                   digital collectibles living on the Ethereum blockchain.
                 </p>
