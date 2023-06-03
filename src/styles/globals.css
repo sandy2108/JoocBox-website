@@ -130,3 +130,50 @@ background: linear-gradient(to right, #FFCF26 10%, #3929F1 27%, #EB22CB 86%);
   font-weight: bold;
 }
 
+.fancy-carousel-wrapper-element {
+  background-color: transparent;
+}
+
+.fancy-carousel-border {
+  background-color: transparent;
+  z-index: 5;
+}
+
+.fancy-carousel {
+  position: relative;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform-origin: center center;
+  background-color: transparent;
+}
+
+.fancy-carousel-navigators {
+  z-index: 1;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+}
+
+
+.fancy-carousel-element {
+  position: absolute;
+  background-color: #ff773d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  bottom: 0;
+  transition: 0.5s;
+  
+  border-radius: 2px;
+}
+
+.fancy-carousel-image, .fancy-carousel-central-image, .fancy-carousel-element {
+  border-radius: 50%;
+}
+
+.invisible {
+  display: none;
+}
+

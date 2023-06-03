@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-
+import booty from '../../assests/Images/Nfts/booty.png'
 import TimeDisplay from "@/components/NFTs/TimeDisplay";
 import { SiEthereum } from "react-icons/si";
-import FancyCarousel from "react-fancy-circular-carousel";
-import "react-fancy-circular-carousel/FancyCarousel.css";
+
+import FancyCarousel from "@/components/NFTs/FancyComponent";
 
 
 const Early = () => {
@@ -11,8 +11,16 @@ const Early = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const phrase = ["Boom Booty", "Juicy Squeeze", "Mimic mystery", "Minty Magic"];
 
-  const images = ["../../assests/Images/Nfts/booty.png", "../../assests/Images/Nfts/jooc.png", "../../assests/Images/Nfts/mim.png", "../../assests/Images/Nfts/minty.png", '../../assests/Images/Ambassadors/e.png','../../assests/Images/Ambassadors/ed.png'];
+  const images = [
+    'https://dl.dropboxusercontent.com/s/e8f1ongrtm2dqry/chickenricedude.png',
+    'https://dl.dropboxusercontent.com/s/h2kp8747fi3i9uy/burgergirl.png',
+    'https://dl.dropboxusercontent.com/s/w3pqqolpbo05dwy/Mimosa_SS.png',
+    'https://dl.dropboxusercontent.com/s/reiy769akca2xkw/Minty_OJ_SS.png',
+    'https://dl.dropboxusercontent.com/s/h742h1za75hqduc/fruitgirl.png',
+    'https://dl.dropboxusercontent.com/s/q4pxb12kjnyauih/pastaguy.png'
 
+  ];
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setShowAnimation(true); // Add class to trigger animation
@@ -28,7 +36,7 @@ const Early = () => {
   }, [phrase.length]);
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen ">
       <div className="max-w-[1240px] mx-auto p-4">
         <div className="md:flex">
           <div className="items-center justify-center">
@@ -76,16 +84,17 @@ const Early = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 right-0 h-screen w-screen overflow-hidden hidden lg:block">
+          <div className="absolute bottom-0 right-0 h-screen w-screen overflow-hidden hidden lg:block ">
             <div className="h-screen w-screen flex items-end justify-end">
               <div className="w-[450px] h-[480px]">
                 <FancyCarousel
                   images={images}
-                  autoRotateTime={3}
+                  autoRotateTime={2}
                   centralImageRadius={0}
-                  carouselRadius={300}
+                  carouselRadius={320}
                   borderWidth={0}
                   peripheralImageRadius={90}
+                  borderHexColor={'ff6600'}
                   
                 />
               </div>

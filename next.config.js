@@ -4,6 +4,9 @@ const withVideos = require('next-videos');
 const nextConfig = {
   reactStrictMode: true,
   // other Next.js configuration options
+  images: {
+    domains: ['dl.dropboxusercontent.com'],
+  },
 };
 
 module.exports = withVideos(nextConfig, {
