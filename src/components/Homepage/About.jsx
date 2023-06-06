@@ -24,7 +24,7 @@ const About = () => {
       alt: '/',
       title: 'Demand spikes, fees dont',
       description:
-        'Horizontal scaling keeps fees low and steady even at times of increased demand.',
+        'Horizontal scaling keeps fees low and steady even at times of increased demand. Rapid fast and juicy box for everyonee    ',
     },
     {
       imageSrc: fast,
