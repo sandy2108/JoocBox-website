@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className='w-full h-full my-5'>
         <div className='m-4'>
-          <div className='max-w-[1500px] rounded-3xl flex-wrap background h-[680px] m-auto p-4'>
+          <div className='max-w-[1450px] rounded-3xl flex-wrap background h-[680px] m-auto p-4'>
             <div className='mx-auto md:my-12'>
                 <h1 className=' font-inter font-normal text-transparent sm:text-9xl  m-5 text-7xl leading-none text-gradient bg-gradient-to-r from-gray-900 to-white bg-clip-text' >Build Beyond </h1>
             </div>

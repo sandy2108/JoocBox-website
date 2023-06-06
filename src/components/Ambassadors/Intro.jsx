@@ -6,23 +6,23 @@ const Intro = () => {
   return (
     <div className="w-full h-full">
       <div className="md:pt-10">
-        <div className="max-w-[1240px] lg:h-[500px] rounded-3xl bg-[#eaf7ff] mx-auto lg:px-18 md:pb-40 pt-14  p-4">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="order-2 md:order-1 md:ml-9">
-              <div className="text-left md:my-20 my-10 ml-3">
-                <p className="font-semibold text-left md:text-6xl text-[30px] leading-none ">
+        <div className="max-w-[1350px] h-[640px] rounded-3xl bg-[#eaf7ff] mx-auto  md:pb-40 pt-14  p-4 justify-center items-center">
+          <div className="md:flex  lg:flex justify-center items-center my-12">
+            <div className="order-1 lg:order-1 ">
+              <div className="text-left  px-10">
+                <p className="font-semibold text-left text-[39px] lg:text-[81px] leading-none ">
                   Become a JoocBox{" "}
                   <span className="text-blue-400 ">Ambassador</span>
                 </p>
-                <p className="my-5 md:my-20 text-[20px] md:text-[30px] leading-[30px] font-normal">Help grow and educate the JoocBox Community</p>
+                <p className=" text-[20px] md:text-[30px] lg:text-[30px] leading-[30px] font-normal">Help grow and educate the JoocBox Community</p>
               </div>
             </div>
-            <div className="order-1 md:order-2 ">
-              <div className=" flex items-center justify-center md:mt-10 mt-0 ">
-                <Image src={amba} width="330" height="330" alt="/" className="rounded-xl mx-20 lg:h-250 lg:w-30" />
+            <div className="order-2 md:order-1 ">
+              <div className=" flex items-center justify-center md:mt-10 lg:mt-0 mt-0 ">
+                <Image src={amba} width="400" height="400" alt="/" className="rounded-xl mx-20 " />
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
