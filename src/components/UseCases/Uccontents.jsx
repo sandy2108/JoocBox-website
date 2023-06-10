@@ -10,7 +10,7 @@ const Uccontents = () => {
       mainButton: "Gaming",
       title: "Game-changing Entertainment",
       description:
-        "Sui unlocks new gaming experiences with the power of expressive smart contracts. Players can truly own in-game assets that are only limited by the developers imagination.",
+        "JoocBox unlocks new gaming experiences with the power of expressive smart contracts. Players can truly own in-game assets that are only limited by the developers imagination.",
       button: ["Dynamic Assets", "Seamless Onboarding", "Realtime Settlement"],
       gifImage: game,
       bgColor:"bg-[#c0e6ff80]",
@@ -23,7 +23,7 @@ const Uccontents = () => {
       mainButton: "Finance",
       title: "The Internet of Value for Everyone",
       description:
-        "Sui enables near instant settlement for peer-to-peer payments and asset transfers, allowing builders to develop fast, available, and accessible financial services",
+        "JoocBox enables near instant settlement for peer-to-peer payments and asset transfers, allowing builders to develop fast, available, and accessible financial services",
       button: ["Fast", "Secure and Safe", "High Throughput"],
       gifImage: game,
       bgColor:"bg-[#ffffff]",
@@ -36,7 +36,7 @@ const Uccontents = () => {
       mainButton: "Fashion",
       title: "Authentic Interactions, Verifiable Assets",
       description:
-        "Social networks built on Sui allow media, posts, and interactions to be owned by their creator and verifiable by users.",
+        "Social networks built on JoocBox allow media, posts, and interactions to be owned by their creator and verifiable by users.",
       button: ["Interoperable Assets", "Low Transaction Fees", "Private"],
       gifImage: game,
       bgColor:"bg-[#011829]",
