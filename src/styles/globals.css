@@ -199,6 +199,13 @@ background: linear-gradient(90deg, #451307 0%, rgb(11, 13, 14) 46%, #0f0f0f 100%
  
 }
 
+.usecasebg1{
+  background-image: url('../assests/Images/usecases/nmmn.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right , left center;
+}
+
 
 
 
