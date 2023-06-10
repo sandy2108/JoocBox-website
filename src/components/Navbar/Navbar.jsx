@@ -60,7 +60,7 @@ const Navbar = () => {
   const dropdownContent = () => {
     return (
       <div className='max-w-[1240px] mx-auto p-4 border-r-4'>
-        <p className='px-2 text-lg flex primary1'> <BsLayers className='mx-2 mt-1'/> Use cases</p>
+        <p className='px-2 text-lg flex  text-[#3490dc]'> <BsLayers className='mx-2 mt-1 text-orange-500'/> Use cases</p>
         {dropdownItems.map((item, index) => (
           <h1
             key={index}
@@ -77,7 +77,7 @@ const Navbar = () => {
     return (
       <div className='w-full'>
         <div className='my-5'>
-        <p className=' text-xl flex primary1'> <BsLayers className='mx-2 mt-1'/> Use cases</p>
+        <p className=' text-xl flex text-[#3490dc] '> <BsLayers className='mx-2 mt-1 text-orange-500'/> Use cases</p>
         {dropdownItems.map((item, index) => (
           <p
             key={index}
@@ -123,13 +123,14 @@ const Navbar = () => {
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft/Early' },
-                  { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
-                  { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
+                  { text: 'Intro to JoocBox', hoverText: 'Intro to JoocBox', url:'/learn/Intro_to_JoocBox' },
+                  { text: 'Use Cases', hoverText: 'Use Cases' ,url:'/learn/UseCases'},
+                  { text: 'Research', hoverText: 'Research ',url:'/learn/Research' },
+                  { text: 'Blog', hoverText: 'Blog',url:'https://blog.joocbox.io' },
                 ])
               }
             >
-              NFT Series
+              Learn
             </h1>
             <h1
               className='p-2 text-base font-Inter font-medium leading-[21px] text-[#91a3b1] hover:text-blue-500 cursor-pointer'
@@ -219,15 +220,16 @@ const Navbar = () => {
               className='primary text-base font-medium cursor-pointer'
               onMouseEnter={() =>
                 handleHover([
-                  { text: 'Join Early Beta Access', hoverText: 'Join Early Beta Access', url:'/nft/Early' },
-                  { text: 'Join Whitelist', hoverText: 'Join Whitelist' ,url:'whitelist'},
-                  { text: 'JoocBox NFT Mint', hoverText: 'JoocBox NFT Mint',url:'mint' },
+                  { text: 'Intro to JoocBox', hoverText: 'Intro to JoocBox', url:'/learn/Intro_to_JoocBox' },
+                  { text: 'Use Cases', hoverText: 'Use Cases' ,url:'/learn/UseCases'},
+                  { text: 'Research', hoverText: 'Research',url:'/learn/Research' },
+                  { text: 'Blog', hoverText: 'Blog',url:'https://blog.joocbox.io' },
                 ])
               }
               onClick={toggleDivVisibility}
               
             >
-              NFT Series
+              Learn
             </h1>
 
             <h1

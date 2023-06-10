@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import booty from '../../assests/Images/Nfts/booty.png'
 import TimeDisplay from "@/components/NFTs/TimeDisplay";
 import { SiEthereum } from "react-icons/si";
 
 import FancyCarousel from "@/components/NFTs/FancyComponent";
 
 
-const Early = () => {
+const NftIntro = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [showAnimation, setShowAnimation] = useState(false);
   const phrase = ["Minty Magic","Juicy Girl", "Pasta Guy", "Boxer Boy","Hot Babe","Mimic Mystery"];
@@ -107,4 +106,4 @@ const Early = () => {
   );
 };
 
-export default Early;
+export default NftIntro;

@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <div className="w-full h-full">
       <div className="pt-10">
-        <div className="max-w-[1350px] h-[600px] rounded-3xl bg-[#eaf7ff] mx-auto md:pb-40 pt-14 p-4 justify-center items-center">
+        <div className="max-w-[1350px]  h-[600px] rounded-3xl bg-[#eaf7ff] mx-auto md:pb-40 pt-14 p-4 justify-center items-center">
           <div className="md:flex lg:flex justify-center items-center md:my-12 ">
             <div className="grid grid-cols-1 order-2 md:order-2 lg:order-2">
               <div className="flex items-center justify-center  mr-10">
