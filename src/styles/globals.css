@@ -30,7 +30,7 @@
 }
 
 .background {
-  background-image: url('../assests/Images/newbggif.gif');
+  background-image: url('../assests/Images/Mainpage/newbggif.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right , left center;
@@ -38,13 +38,13 @@
 }
 
 .loop{
-  background-image: url('../assests/Images/loop.gif');
+  background-image: url('../assests/Images/Mainpage/loop.gif');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .photo{
-  background-image: url("../assests/Images/sui.png");
+  background-image: url("../assests/Images/Mainpage/sui.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-Position: center ,center;
@@ -192,11 +192,14 @@ background: linear-gradient(90deg, #451307 0%, rgb(11, 13, 14) 46%, #0f0f0f 100%
 }
 
 .usecasebg {
-  background-image: url('../assests/Images/newbggif.gif');
+  background-image: url('../assests/Images/usecases/6.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right , left center;
-  height: 100vh; 
+ 
 }
+
+
+
 
 

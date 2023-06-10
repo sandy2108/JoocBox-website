@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import arrow from '../../assests/Images/DemandSpikes.png';
-import dynamicAsset from '../../assests/Images/DynamicAssets.png';
-import fast from '../../assests/Images/FastEnough.png';
+import arrow from '../../assests/Images/Mainpage/DemandSpikes.png';
+import dynamicAsset from '../../assests/Images/Mainpage/DynamicAssets.png';
+import fast from '../../assests/Images/Mainpage/FastEnough.png';
 
 const About = () => {
   const [textIndex, setTextIndex] = useState(0);

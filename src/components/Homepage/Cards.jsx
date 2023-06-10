@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import bg from '../../assests/Videos/community.mp4';
-import juice from '../../assests/Images/j.png';
-import panda from '../../assests/Images/panda.png';
+import juice from '../../assests/Images/Mainpage/j.png';
+import panda from '../../assests/Images/Mainpage/panda.png';
 
 const Cards = () => {
   const cardData = [

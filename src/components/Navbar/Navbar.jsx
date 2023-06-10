@@ -5,7 +5,7 @@ import { TbBrandTelegram } from 'react-icons/tb';
 import { AiOutlineInstagram, AiOutlineMenu } from 'react-icons/ai';
 import { BiMenu } from 'react-icons/bi';
 import Link from 'next/link';
-import logo from '../../assests/Images/logo.png';
+import logo from '../../assests/Images/Mainpage/logo.png';
 import Image from 'next/image';
 import { useEffect,useRef } from 'react';
  import { BsLayers } from "react-icons/bs";

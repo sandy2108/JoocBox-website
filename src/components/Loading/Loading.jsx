@@ -1,5 +1,5 @@
 import React from 'react';
-import loading from '../../assests/Images/loading.gif';
+import loading from '../../assests/Images/Mainpage/loading.gif';
 import Image from 'next/image';
 
 const CustomLoadingIcon = () => {
