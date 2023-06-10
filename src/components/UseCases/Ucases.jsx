@@ -8,7 +8,7 @@ export const Ucases = () => {
         <div className="max-w-[1400px] md:rounded-3xl flex-wrap lg:px-20 md:px-10 usecasebg h-[680px] mx-auto p-4 flex items-center justify-center">
           <div className="max-w-[1240px] mx-auto p-4">
           <div className="mb-10 md:mb-0 items-center justify-center ">
-            <h1 className="font-inter font-medium text-white text-[54px] leading-[54px] lg:text-[120px] md:text-[72px] md:leading-[76px] lg:leading-[111px] lg:pb-10">
+            <h1 className="font-inter font-medium text-white text-[45px] leading-[54px] lg:text-[120px] md:text-[72px] md:leading-[76px] lg:leading-[111px] lg:pb-10">
               Metamorphic Experiences
             </h1>
             <div className="md:flex items-center justify-between border-t-2 mt-5 border-[#cedae7] py-10">
