@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import game from "../../assests/Images/usecases/nmmn.gif";
-import finance from "../../assests/Images/usecases/fgg.gif";
+
 
 const Uccontents = () => {
   const data = [
@@ -29,7 +29,7 @@ const Uccontents = () => {
       bgColor:"bg-[#ffffff]",
       borderColor:"border-[#e5e7eb]",
       textColor: "text-[#111111]",
-      buttonBorder:"border-[#000000]"
+      buttonBorder:"border-gray-500"
     },
     {
       id: 3,
@@ -85,8 +85,8 @@ const Uccontents = () => {
               </div>
 
               <div className="flex items-center lg:justify-end justify-start md:order-1 order-1 lg:order-2">
-                <div className="relative">
-                  <div className="rounded-2xl overflow-hidden usecasebg1">
+                <div className="relative md:max-w-[55%] lg:max-w-[70%]">
+                  <div className="rounded-2xl overflow-hidden usecasebg1 ">
                     <Image
                       src={item.gifImage}
                       alt="The Game Video"
